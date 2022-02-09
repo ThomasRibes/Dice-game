@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thomas-Ribes_Evaluation-Dynamiser-vos-sites-web-avec-Javascript</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <meta name="description" content="Jeu de dé">
+	<title>Thomas-Ribes_Evaluation-Dynamiser-vos-sites-web-avec-Javascript</title>
+  <!-- ajout de Bootstrap en CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+	 crossorigin="anonymous">
+  <!-- ajout de la font Lato -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <!-- lien de la stylesheet -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  
+  <div class="container">
+    <!-- div joueur1 -->
+    <section class="player1 active">
+  		<div>
+        <div class="name1 player"></div> 
+        <div class="gp1"></div>
+      </div>
+  	  <div class ="current">
+  	  	<div>ACTUEL</div>
+  	  	<div class="cp1"></div>
+  		</div>
+    </section>
+    <!-- div centrale des boutons -->
+    <div class="buttons">
+      <button id="new" class="btn btn-primary">NOUVELLE PARTIE</button>
+      <img class="dice" src="./images/0.png" alt="">
+      <div class="roll-hold">
+        <button id="roll" class="btn btn-danger">JETER LE DÉ</button>
+        <button id="hold" class="btn btn-success">SÉCURISER</button>
+      </div>    
+    </div> 
+    <!-- div joueur2 -->
+    <section class="player2">
+      <div>
+        <div class="name2 player"></div>
+        <div class="gp2"></div>
+      </div>	  
+  	  <div class ="current">
+  	  	<div>ACTUEL</div>
+  	  	<div class="cp2"></div>
+  		</div>
+    </section>
+  </div>	
+  <!-- lien du fichier JS -->
+  <script src="script.js"></script>
 </body>
 </html>
